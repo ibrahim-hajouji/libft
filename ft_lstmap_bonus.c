@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 17:47:34 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 16:09:32 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 08:54:48 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	ptr = NULL;
 	result = NULL;
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	while (lst)
 	{
@@ -38,7 +38,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (result);
 }
 
-void 	*f(void	*str)
+/* void	*f(void	*str)
 {
 	int	i = 0;
 	while (((char *)str)[i])
@@ -57,7 +57,7 @@ void	del(void *node)
 	free(node);
 }
 
-/* int main()
+int main()
 {
 	char s[10] = "hello";
 	char s1[10] = "42";
@@ -76,5 +76,4 @@ void	del(void *node)
 		printf("%s\n", (char *)new_list -> content);
 		new_list = new_list -> next;
 	}
-	
 } */

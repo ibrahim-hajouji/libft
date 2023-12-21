@@ -57,10 +57,10 @@ all: ${NAME}
 	${GCC} ${CFLAGS} ${IFLAGS}  -c $< -o $@
 
 ${NAME}: ${OBJ}
-	ar rc ${NAME} ${OBJ}
+	ar rcs ${NAME} ${OBJ}
 
 bonus: ${NAME} ${OBJB} ${OBJ}
-	ar rc ${NAME} ${OBJB}
+	ar rcs ${NAME} ${OBJB}
 
 clean:
 	rm -f ${OBJ} ${OBJB}

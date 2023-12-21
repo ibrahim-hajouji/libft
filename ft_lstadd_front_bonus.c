@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 12:19:44 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 15:05:55 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/14 17:26:13 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !new)
+		return ;
 	new -> next = *lst;
 	*lst = new;
 }

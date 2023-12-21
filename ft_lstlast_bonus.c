@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 20:47:25 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 15:13:35 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 08:10:35 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,7 @@ t_list	*ft_lstlast(t_list *lst)
 	if (!lst)
 		return (NULL);
 	while (lst -> next)
-	{
 		lst = lst -> next;
-	}
 	return (lst);
 }
 /* int main()

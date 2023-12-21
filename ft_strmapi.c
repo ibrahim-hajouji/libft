@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 16:41:57 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 12:43:24 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 08:55:29 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*result;
 
 	index = 0;
+	if (!s || !f)
+		return (NULL);
 	result = (char *)malloc (sizeof(char) * (ft_strlen(s) + 1));
 	if (!result)
 		return (NULL);

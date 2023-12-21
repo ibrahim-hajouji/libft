@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/11 11:15:22 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 15:53:40 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 08:54:23 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	(*del)(lst -> content);
 	free(lst);

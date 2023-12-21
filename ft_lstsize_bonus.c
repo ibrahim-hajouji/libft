@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/10 13:26:04 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 15:07:19 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 09:24:55 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	ft_lstsize(t_list *lst)
 	int	count;
 
 	count = 0;
+	if (!lst)
+		return (0);
 	while (lst)
 	{
 		count++;

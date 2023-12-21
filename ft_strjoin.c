@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 13:17:14 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/07 14:22:49 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 07:11:17 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
 	result_len = ft_strlen(s1) + ft_strlen(s2) + 1;
 	result = malloc(sizeof(char) * (result_len));
 	if (!result)
@@ -32,11 +34,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 	}
 	while (s2[j])
-	{
-		result[i] = s2[j];
-		i++;
-		j++;
-	}
+		result[i++] = s2[j++];
 	result[i] = '\0';
 	return (result);
 }

@@ -6,13 +6,13 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 14:23:09 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/10 14:24:12 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 08:13:48 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
+/* #include <stdio.h>
+#include <stdlib.h> */
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

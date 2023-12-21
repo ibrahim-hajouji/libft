@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 15:41:17 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/04 15:48:31 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/14 12:27:09 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
-/*int main()
+/* int main()
 {
-	char s[45] = "12345679";
-	printf("%lu", ft_strlen(s));
+	const char *s = "12345679";
+ 	printf("%lu", ft_strlen(s));
 	printf("%lu", strlen(s));
-}*/
+} */

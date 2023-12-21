@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/04 22:39:46 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 19:19:36 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/14 09:44:42 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	}
 	dst[j] = '\0';
 	return (total);
-} 
+}
 /* int main()
 {
 	char	dst[12] = "hello, ";

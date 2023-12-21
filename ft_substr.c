@@ -6,7 +6,7 @@
 /*   By: ihajouji <ihajouji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 10:54:41 by ihajouji          #+#    #+#             */
-/*   Updated: 2023/12/13 11:44:49 by ihajouji         ###   ########.fr       */
+/*   Updated: 2023/12/16 07:08:54 by ihajouji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	j = 0;
 	i = 0;
+	if (!s)
+		return (0);
 	if (start > ft_strlen(s))
 		return (ft_strdup(""));
 	if (len > ft_strlen(s) - start)
@@ -30,10 +32,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	while (s[i])
 	{
 		if (i >= start && j < len)
-		{
-			str[j] = s[i];
-			j++;
-		}
+			str[j++] = s[i];
 		i++;
 	}
 	str[j] = '\0';
